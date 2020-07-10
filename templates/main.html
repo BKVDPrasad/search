@@ -1,0 +1,36 @@
+<html>
+<body>
+<form class="form-inline my-2 my-lg-0" action="{% url 'search' %}">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" >
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+I am prasd
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+I am kumar
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+I am venkata
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+I am durga
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% for article in articles %}
+<a> {{article.feeder}} </a>
+{% endfor %}
+<table align="center" bgcolor="#ffd700" border="2">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>Phone</th>
+        <th>gender</th>
+    </tr>
+    {% for x in p %}
+        <tr>
+
+            <th>{{ x.name }}</th>
+            <th>{{ x.age }}</th>
+            <th>{{ x.pho }}</th>
+            <th>{{ x.gender }}</th>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
